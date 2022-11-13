@@ -126,6 +126,10 @@ public class MethodUtils {
                 url = url + "%2B";
             }else if (a[i] == '=') {
                 url = url + "%3D";
+            }else if (a[i] == '/') {
+                url = url + "%2F";
+            }else if (a[i] == '?') {
+                url = url + "%3F";
             }
             else {
                 url = url + a[i];

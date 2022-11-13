@@ -1,20 +1,15 @@
 package cn.keking.utils;
 
+import cn.keking.config.StaticGetPrivate;
+
 public class StaticVariables {
 
-    public static String ip = "http://127.0.0.1";
 
+    public static String path = StaticGetPrivate.getmyAddress() + "/demo/";
 
+    public static String vodAddress = StaticGetPrivate.getvodAddress();
 
-    public static String address = "http://127.0.0.1:8012";
-
-    public static String path = "http://127.0.0.1:8012/demo/";
-
-    public static String previewAddress = "http://127.0.0.1:8012/demo/";
-
-    public static String vodAddress = "http://127.0.0.1:8333";
-
-    public static String addPath = vodAddress  + "/files/add";
+    public static String addPath = vodAddress  + "/files/add/";
 
     public static String updatePath = vodAddress  + "/files/updateByName/";
 

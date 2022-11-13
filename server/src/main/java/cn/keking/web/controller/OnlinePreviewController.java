@@ -117,6 +117,7 @@ public class OnlinePreviewController {
 
         String name = StrUtil.unWrap(fileUrl, StaticVariables.path, "");
         System.out.println("MethodUtils.stringToUrl(url):---->" + MethodUtils.stringToUrl(url));
+        System.out.println("MStaticVariables.updatePath + name + \"/\" + MethodUtils.stringToUrl(url):---->" + StaticVariables.updatePath + name + "/" + MethodUtils.stringToUrl(url));
         StaticGetPrivate.getTemplates().getForObject(StaticVariables.updatePath + name + "/" + MethodUtils.stringToUrl(url), String.class);
 
         return filePreview.filePreviewHandle(fileUrl, model, fileAttribute);
