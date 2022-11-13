@@ -115,10 +115,10 @@ public class OnlinePreviewController {
         }
         logger.info("预览文件url：{}，IP：{}，previewType：{}", fileUrl,ip, fileAttribute.getType());
 
-        String name = StrUtil.unWrap(fileUrl, StaticVariables.path, "");
+/*        String name = StrUtil.unWrap(fileUrl, StaticVariables.path, "");
         System.out.println("MethodUtils.stringToUrl(url):---->" + MethodUtils.stringToUrl(url));
         System.out.println("MStaticVariables.updatePath + name + \"/\" + MethodUtils.stringToUrl(url):---->" + StaticVariables.updatePath + name + "/" + MethodUtils.stringToUrl(url));
-        StaticGetPrivate.getTemplates().getForObject(StaticVariables.updatePath + name + "/" + MethodUtils.stringToUrl(url), String.class);
+        StaticGetPrivate.getTemplates().getForObject(StaticVariables.updatePath + name + "/" + MethodUtils.stringToUrl(url), String.class);*/
 
         return filePreview.filePreviewHandle(fileUrl, model, fileAttribute);
     }
