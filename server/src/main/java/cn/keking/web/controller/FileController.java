@@ -105,6 +105,9 @@ public class FileController {
                 url = new String(Base64Utils.encode(url.getBytes(DEFAULT_CHARSET)), StandardCharsets.UTF_8);
                 file1.setUrl(MethodUtils.stringToUrl(url));
                 System.out.println("file1:---->" + file1);
+
+//                file1.setVolume((String) file.getSize());
+
                 StaticGetPrivate.getTemplates().postForObject(StaticVariables.addPath,file1,String.class);
 
                 return new ObjectMapper().writeValueAsString(ReturnResponse.success(null));

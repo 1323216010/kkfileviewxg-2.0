@@ -13,4 +13,6 @@ public class File {
     private String type;
 
     private String url;
+
+    private String volume;
 }
