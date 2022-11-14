@@ -11,8 +11,6 @@ public class StaticVariables {
 
     public static String addPath = vodAddress  + "/files/add/";
 
-    public static String updatePath = vodAddress  + "/files/updateByName/";
-
     public static String deletePath = vodAddress  + "/files/delete/";
 
 }
