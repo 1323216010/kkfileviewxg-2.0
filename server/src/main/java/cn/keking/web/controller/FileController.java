@@ -106,7 +106,7 @@ public class FileController {
                 file1.setUrl(MethodUtils.stringToUrl(url));
                 System.out.println("file1:---->" + file1);
 
-//                file1.setVolume((String) file.getSize());
+                file1.setVolume(MethodUtils.getFileSize(String.valueOf(file.getSize())));
 
                 StaticGetPrivate.getTemplates().postForObject(StaticVariables.addPath,file1,String.class);
 
